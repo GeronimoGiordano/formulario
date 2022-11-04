@@ -55,8 +55,8 @@ export const Signup = () => {
         confirmPassword: "",
       }}
       validationSchema={validate}
-      onSubmit={() => {
-        console.log("asd");
+      onSubmit={(values) => {
+        console.log(values);
       }}
     >
       {(formik) => {
